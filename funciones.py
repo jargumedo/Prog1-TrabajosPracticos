@@ -7,6 +7,25 @@ def sumDigits(number):
         
     return add
         
+def rellena_guiones(word):
+    word=list(word)
+    for x in range(len(word)):
+        word[x]="_"
         
+    return (word)
 
+def ingresa_letra():
+    
+    letra=input("Ingrese una letra para buscar: ").lower()
+    while len(letra)!=1:
+        print("Debe ingresar una sola letra, intente de nuevo")
+        letra=input("Ingrese una letra para buscar: ").lower()
+    
+    return letra
+    
+def resultado_ahorcado(vidas, palabra):
+    if(vidas == 0):
+        print(f"Perdiste, la palabra era {palabra}")
+    else:
+        print("Felicidades, ganaste maquina")
 
