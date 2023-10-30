@@ -29,3 +29,11 @@ def resultado_ahorcado(vidas, palabra):
     else:
         print("Felicidades, ganaste maquina")
 
+def is_power(n, b) -> bool:
+    if n == 1:
+        return True
+    elif n % b != 0 or n == 0:
+        return False
+    else:
+        return is_power(n / b, b)
+    

@@ -1,5 +1,6 @@
 matriz_cuacrada=[[2,5,6],[10,5,7],[8,1,4]]
 matriz_diagonal=[]
+matrriz_diag_inversa=[]
 
 for i in range(len(matriz_cuacrada)):
     for j in range(len(matriz_cuacrada)):
@@ -7,3 +8,5 @@ for i in range(len(matriz_cuacrada)):
             matriz_diagonal.append(matriz_cuacrada[i][j])
             
 print(matriz_diagonal)
+#len-1-i
+
